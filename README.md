@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 项目环境的配置
 
-## Available Scripts
+>基于create-react-app    创建的项目环境
+>react-app-rewired  对 create-react-app 进行自定义配置
 
-In the project directory, you can run:
+**环境相关依赖**
+> react-app-rewired
+>customize-cra
+>babel-plugin-import
 
-### `npm start`
+```javascript
+    yarn add react-app-rewired customize-cra babel-plugin-import-dev
+```
+# 技术栈
+- 高阶组件
+- react-router-dom
+- redux
+- react-redux
+- redux-actions
+- redux-thunk
+- whatwg-fetch
+- react-loadable
+- qs
+- styled-components
+- http-proxy-middleware
+- @babel/plugin-proposal-decorators 装饰器
+- js-cookie
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```javascript
+    yarn add react-router-dom redux react-redux redux-actions  whatwg-fetch redux-thunk react-loadable qs styled-components 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
 
-### `npm test`
+- http.js  请求数据的封装使用
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 登录注册基本编辑
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- tabBar 显示/隐藏控制方法{
+    创建一个layout，在这个layout组件中引入tabBar组件，通过{this.props.children}来显示组件标签内的元素/组件
+    路由配置项中的meta携带flag 属性的true/false来控制是否渲染  <tabBar/> 这个组件
+    那么整个<layout/> 在哪里使用呢？  这个在路由的遍历中去使用，renderRoutes.js 中使用
+    这样就实现了控制是否显示了
+    {其实老赵也想过通过高阶组件的反向继承来实现，结果不会，后台自己想办法整理一下}
+}
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 201910031840 代理跨域   yarn add http-proxy-middleware --dev

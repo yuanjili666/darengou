@@ -1,0 +1,44 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,a,textarea,input,button,
+span,em,strong,img,div,p,blockquote,pre,a,abbr,acronym,del,
+        cite,address,small,sub,sup,b,u,
+        i {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        i{
+            font-style: normal;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        s {
+            text-decoration: none;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        input,
+        textarea {
+            outline: none;
+        }
+
+        html {
+            font-size: 26.66vw;
+        }
+        body{
+            font-size: .16rem;
+        }
