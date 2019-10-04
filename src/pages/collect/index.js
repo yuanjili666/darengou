@@ -5,7 +5,11 @@ export default class Collect extends Component{
         return(
             <div>
             Collect 收藏
+
+            
             </div>
         )
     }
 }
+
+
