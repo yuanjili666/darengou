@@ -1,0 +1,405 @@
+body,html{
+    overflow: hidden;
+    overflow-y: auto;
+    background: #e2ddde;
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+html{
+    font-size:26.67vw;
+}
+body{
+    font-size: 17px;
+    margin: 0 auto;
+    background: #e2ddde;
+    top: 0;
+    left: 0;
+}
+body, button, div, img, input, li, p, span, ul {
+    margin: 0;
+    border: none;
+    padding: 0;
+    outline: 0;
+}
+.main-title{
+    position:fixed;
+    top:0;
+    background: linear-gradient(to left,#FA4DBE 0,#FBAA58 100%);
+    padding:.08rem .1rem;
+    left:0;
+    width:100%;
+    z-index:120;
+    display: block;
+    box-sizing: border-box;
+    height:.44rem;
+}
+.main-title .main-back{
+    position: absolute;
+    left:.1rem;
+    height:.28rem;
+    width: .28rem;
+    display: block;
+    /* background:url("../img/cms-img.png") no-repeat -.32rem 0; */
+    background-size: 2.87rem 8rem;
+    float:left;
+}
+.main-title .menu-cat{
+    height: .28rem;
+    line-height: .28rem;
+    text-align: center;
+    
+}
+.main-title .menu-cat img{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.main-title .main-more{
+    /* background:url("../img/cms-img.png") no-repeat -2.43rem 0; */
+    background-size: 2.87rem 8rem;
+    width:.28rem;
+    height:.28rem;
+    position: absolute;
+    right:.1rem;
+    top:.1rem;
+}
+.layout{
+    padding-bottom:.44rem;
+    margin-top:.44rem;
+    max-width: 7.5rem;
+    overflow: hidden;
+}
+.layout .nine_tab{
+    background:#fff;
+    margin-bottom: .1rem;
+    clear:both;
+    overflow: hidden;
+}
+.layout .nine_tab li{
+    height: .9475rem;
+    float: left;
+    border-bottom: .01rem solid #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    border-right:1px solid #f5f5f5;
+}
+.layout .nine_tab .col-6{
+    width:50%;
+}
+.layout .nine_tab .col-3{
+    width:25%;
+}
+.layout .nine_tab h3{
+    position: relative;
+    z-index:10;
+    overflow: hidden;
+    padding: .05rem 0 .05rem .1rem;
+    height: .21rem;
+    line-height: .10rem;
+    font-size: .15rem;
+    font-weight: 400;
+    color:#FC4073;
+}
+.nine_tab li p{
+    position: relative;
+    z-index:10;
+    color:#888;
+    top: -0.05rem;
+    font-size: .12rem;
+    padding-left: .1rem;
+    line-height: .18rem
+}
+.nine_tab li img{
+    bottom:0 ;
+    height:100%;
+    position: absolute;
+    right:0
+}
+.nine_tab li.list2 h3 {
+    color: #1889FF;
+}
+.layout .goods_sticky{
+    position: relative;
+}
+.layout .goods_sticky .nine_nav_tab{
+    position: relative;
+    top:0;
+    height:.54rem;
+    z-index:80;
+    width: 100%;
+    background:#fff;
+    transform-origin: center;
+    text-align: center;
+    overflow: hidden;
+}
+.icon_nav_tab .swiper-container{
+    position: relative;
+    z-index:1;
+    overflow: hidden
+}
+.nine_nav_tab .swiper-wrapper{
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, 0px);
+    color: black;
+    height: .54rem;
+    text-align: center;
+    position: relative;
+    z-index:50;
+    zoom:1;
+    display: flex;
+}
+.icon_nav_tab .swiper-slide {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: auto;
+    line-height: .54rem;
+    margin: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.icon_nav_tab .swiper-slide a{
+    height:.54rem;
+    line-height: .54rem;
+    display: block;
+    position: relative;
+    margin:0 .15rem;
+    font-size: .14rem;
+    text-align: center;
+    color:#333;
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.icon_nav_tab .swiper-slide .active a{
+    color:#FC3F78;
+    font-weight: 600;
+}
+.goods_sticky .nine_comlist{
+    background: #fff;
+    margin-bottom: .01rem;
+}
+.goods_sticky .nine_comlist .nine_h3bt{
+    height:.4rem;
+    font-weight:400;
+    line-height:.4rem;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+.goods_sticky .nine_comlist .nine_h3bt span{
+    top:-.02rem;
+    padding:0 .1rem;
+    font-size:.15rem;
+    color:#FC436D;
+    /* position: relative; */
+}
+
+.nine_h3bt span:after {
+    position: absolute;
+    left:1.1rem;
+    top: .09rem;
+    height: .25rem;
+    width: .25rem;
+    /* background: url("../img/nine_tab_left.svg") center center no-repeat; */
+    background-size: 65% auto;
+    content: "";
+    display: inline-block;
+}
+.nine_h3bt span:before {
+    top: .09rem;
+    right: 1.1rem;
+    /* background: url("../img/nine_tab_right.svg") center center no-repeat; */
+    background-size: 65% auto;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: .25rem;
+    width: .25rem;
+}
+.nine_swiper_new{
+    overflow:hidden;
+    position: relative;
+}
+.nine_swiper_new .swiper-container {
+    padding-left: .1rem;
+    margin-bottom: .05rem;
+}
+.nine_swiper_new .swiper-wrapper{
+    display: flex;
+    
+}
+.nine_swiper_new .swiper-slide{
+    display: block;
+    flex-shrink: 0;
+    width:30%;
+}
+.nine_swiper_new .swiper-slide .swiper-cent{
+    margin-right:.1rem;
+    height:100%;
+}
+.nine_swiper_new .swiper-slide .img{
+    display: block;
+    position: relative;
+    z-index:1;
+}
+.nine_swiper_new .swiper-slide .img img{
+    width:100%;
+    height:1rem;
+}
+.nine_swiper_new .swiper-slide .img .text{
+    border-radius: 0 0 .02rem .02rem;
+    text-align: center;
+    /* text-indent: .2em; */
+    background: #FFF3F3;
+    border: 1px solid #ffbdbf;
+    color: #fc4d52;
+    font-size: .1rem;
+    overflow: hidden;
+    height: .14rem;
+    line-height: .14rem;
+}
+.nine_swiper_new .swiper-slide .name{
+    font-size: 11px;
+    padding: 5px 0 0;
+    margin-bottom: 5px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: #666;
+}
+.nine_swiper_new .swiper-slide .money{
+    color:#FF2B22;
+    font-size:.14rem;
+    overflow: hidden;
+    margin:0 0 .05rem;
+    width:1rem;
+}
+.h3bt_bg{
+    height:.4rem;
+    /* background:url("../img/nine_tab_bg.svg") no-repeat center center #fff; */
+    background-size:auto 100%;
+    line-height:.4rem;
+    text-align: center;
+    margin-top:.05rem
+}
+.nine_h3bt .colout{
+    color:#C043FC;
+    background-image: -webkit-gradient(linear,left 20,right 0,from(#873CFE),to(#FD295E));
+    /* -webkit-background-clip:text; */
+    -webkit-text-fill-color: transparent;
+    top:-.02rem;
+    padding:0 .1rem;
+    z-index:1;
+    font-size: .15rem;
+    position: relative;
+}
+.h3bt_bg span:before {
+    top: -.02rem;
+    right: -.35rem;
+    /* background: url("../img/nine_tab_right_tow.svg"); height:.25rem; */
+    width:.25rem;
+    content: "";
+    background-size:100% auto;
+}
+.h3bt_bg span:after{
+    position: absolute;
+    left: -.35rem;
+    top: -.02rem;
+    height: .25rem;
+    width: .25rem;
+    /* background: url("../img/nine_tab_left_tow.svg") center center no-repeat; */
+    background-size: 100% auto;
+    content: "";
+    display: inline-block;
+}
+.goods-new{overflow:hidden;}
+.goods-new .col-6{
+    width:50%;
+    float:left;
+
+}
+.goods-new .col-6 .cent{
+    background:#fff;
+    margin:0 .025rem .05rem 0;
+}
+.goods-new .col-6 .cent .img{
+    height:1.875rem;
+    display: block;
+    overflow: hidden;
+}
+.goods-new .col-6 .cent .img img{
+    background:rgb(245,245,245);
+    display: block;
+    width:100%;
+}
+.goods-new .col-6 .cent .mar{
+    margin:0 .1rem;
+    padding-bottom: .13rem;
+}
+.goods-new .col-6 .cent .mar .bt{
+    height:.3rem;
+    line-height:.3rem;
+    font-size:.14rem;
+    overflow: hidden;
+    font-weight:400;
+    color:#333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.goods-new li .cent .num{
+    font-size:.12rem;
+    color:#888;
+    padding:.05rem 0 .1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.row-s .col-6 {
+    width: 50%;
+}
+.goods-new li .cent .mar .aaa{
+    height:.22rem;
+}
+.col-red{
+    color:#FF2B22;
+}
+.goods-new .col-6 .cent .money {
+    color: #FF2B22;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    position: relative;
+    top: 2px;
+    line-height: 22px;
+    height: 22px;
+}
+.goods-new li .cent .money span {
+    color: #FF2B22;
+    font-size: 12px;
+}
+.col-6{
+    float:left;
+}
+.goods-new li .cent .quan {
+    overflow: hidden;
+    width: 60px;
+    display: block;
+    top: 2px;
+    float: right;
+    position: relative;
+}
+.goods-new li .cent .quan i {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    font-style: normal;
+    display: block;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 0;
+    border: 1px solid #FC4D52;
+    color: #FC4D52;
+}
